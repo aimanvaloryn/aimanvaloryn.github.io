@@ -3,16 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aiman Valoryn Official Website</title>
+    <title>Aiman Valoryn</title>
     <style>
-        body { font-family: Arial, sans-serif; text-align: center; padding-top: 100px; background: #f8f9fa; }
-        h1 { color: #2d3748; }
-        p { color: #4a5568; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: Helvetica, Arial, sans-serif;
+            color: #fff;
+            background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgi4i8q2ZbG678_AJk9lCDu-l3HWxJ0x8VwHVwUNQOXzB_vZcxw43P4KbXX060k-PjaAOMnGASPrrX-fSsVwuFkcsKZKGaaWl5S4CLfNsXwo9dCuTWuV4rIpVcKC1vx-BDghl2HHs6m7111mkKI3HMS9PPOV8BgkJ9ZffA5Y382KKmusjawNKe7SWZnd6nR/s2560/1000000257.jpg') center/cover no-repeat fixed;
+            position: relative;
+            min-height: 100vh;
+        }
+        body::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0,0,0,0.55);
+            z-index: 0;
+        }
+        header, main, footer { position: relative; z-index: 1; }
+
+        header { padding: 2rem 5%; }
+        .logo {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        nav a {
+            margin-right: 2rem;
+            text-decoration: none;
+            color: #fff;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 0.95rem;
+        }
+        nav a:hover { text-decoration: underline; }
+
+        .hero {
+            padding: 4rem 5% 6rem;
+            max-width: 1100px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            color: #eee;
+            max-width: 700px;
+        }
+        .btn {
+            display: inline-block;
+            border: 1px solid #fff;
+            padding: 0.9rem 1.6rem;
+            text-decoration: none;
+            color: #fff;
+            border-radius: 2px;
+            transition: 0.3s;
+        }
+        .btn:hover { background: #fff; color: #000; }
+
+        footer {
+            padding: 2rem 5%;
+            font-size: 0.9rem;
+            color: #ccc;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            margin-top: 3rem;
+        }
     </style>
 </head>
 <body>
-    <h1>Selamat Datang ke Laman Rasmi Aiman Valoryn</h1>
-    <p>Laman web ini dibina menggunakan GitHub Pages</p>
+    <header>
+        <div class="logo">AIMAN VALORYN</div>
+        <nav>
+            <a href="#">Album</a>
+            <a href="#">Video</a>
+            <a href="#">Tour</a>
+            <a href="#">Shop</a>
+            <a href="#">About Me</a>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <h1>Laman Rasmi</h1>
+        <p>Tempat terkumpul semua karya muzik, video & maklumat terkini.</p>
+        <a href="#" class="btn">Lihat Karya Terkini</a>
+    </main>
+
+    <footer>
+        &copy; 2026 Aiman Valoryn — Semua Hak Terpelihara
+    </footer>
 </body>
 </html>
-
